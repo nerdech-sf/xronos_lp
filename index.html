@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品販売ページ - ワイヤーフレーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="xronos_invisi.svg" alt="XR-Bridge Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li>メニュー1</li>
+                    <li>メニュー2</li>
+                    <li>メニュー3</li>
+                    <li>メニュー4</li>
+                </ul>
+            </nav>
+            <button class="cta-button-header">CTA</button>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li>メニュー1</li>
+                <li>メニュー2</li>
+                <li>メニュー3</li>
+                <li>メニュー4</li>
+            </ul>
+            <button class="cta-button-header">CTA</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">バッジ</div>
+            <div class="hero-title">メインタイトル</div>
+            <div class="hero-description">サブタイトル・説明文</div>
+            <div class="cta-buttons">
+                <button class="cta-button-primary">CTA ボタン</button>
+            </div>
+            <div class="hero-image">メイン画像</div>
+            <div class="cta-buttons">
+                <button class="cta-button-primary">CTA ボタン</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-links">
+        <div class="page-links-container">
+            <div class="page-link-card">ページ内リンク 1</div>
+            <div class="page-link-card">ページ内リンク 2</div>
+            <div class="page-link-card">ページ内リンク 3</div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="section-container">
+            <div class="section-title">機能紹介セクションタイトル</div>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">アイコン</div>
+                    <div class="feature-title">機能タイトル 1</div>
+                    <div class="feature-description">機能説明テキスト</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">アイコン</div>
+                    <div class="feature-title">機能タイトル 2</div>
+                    <div class="feature-description">機能説明テキスト</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">アイコン</div>
+                    <div class="feature-title">機能タイトル 3</div>
+                    <div class="feature-description">機能説明テキスト</div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">アイコン</div>
+                    <div class="feature-title">機能タイトル 4</div>
+                    <div class="feature-description">機能説明テキスト</div>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <button class="cta-button-primary">CTA ボタン</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="detailed-features">
+        <div class="section-container">
+            <div class="section-title">詳細機能セクションタイトル</div>
+            <div class="detail-item">
+                <div class="detail-text">詳細説明テキスト 1</div>
+                <div class="detail-image">詳細画像 1</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-text">詳細説明テキスト 2</div>
+                <div class="detail-image">詳細画像 2</div>
+            </div>
+            <div class="detail-item">
+                <div class="detail-text">詳細説明テキスト 3</div>
+                <div class="detail-image">詳細画像 3</div>
+            </div>
+            <div class="cta-buttons">
+                <button class="cta-button-primary">CTA ボタン</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="flow-comparison">
+        <div class="section-container">
+            <div class="section-title">フロー比較セクションタイトル</div>
+            <div class="flow-container">
+                <div class="flow-column traditional">
+                    <div class="flow-title">従来の方法</div>
+                    <div class="flow-step">ステップ 1</div>
+                    <div class="flow-arrow"></div>
+                    <div class="flow-step">ステップ 2</div>
+                    <div class="flow-arrow"></div>
+                    <div class="flow-step">ステップ 3</div>
+                    <div class="flow-arrow"></div>
+                    <div class="flow-step">ステップ 4</div>
+                </div>
+                <div class="flow-column new">
+                    <div class="flow-title">新しい方法</div>
+                    <div class="flow-step">ステップ 1</div>
+                    <div class="flow-arrow"></div>
+                    <div class="flow-step">ステップ 2</div>
+                    <div class="flow-arrow"></div>
+                    <div class="flow-step">ステップ 3</div>
+                </div>
+            </div>
+            <div class="cta-buttons" style="margin-top: 60px;">
+                <button class="cta-button-primary">CTA ボタン</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="section-container">
+            <div class="section-title">料金プランセクションタイトル</div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="plan-badge">プランバッジ</div>
+                    <div class="plan-name">プラン名 1</div>
+                    <div class="plan-price">価格</div>
+                    <div class="plan-features">プラン機能リスト</div>
+                    <button class="plan-button">プラン選択</button>
+                </div>
+                <div class="pricing-card recommended">
+                    <div class="plan-badge">おすすめ</div>
+                    <div class="plan-name">プラン名 2</div>
+                    <div class="plan-price">価格</div>
+                    <div class="plan-features">プラン機能リスト</div>
+                    <button class="plan-button">プラン選択</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="plan-badge">プランバッジ</div>
+                    <div class="plan-name">プラン名 3</div>
+                    <div class="plan-price">価格</div>
+                    <div class="plan-features">プラン機能リスト</div>
+                    <button class="plan-button">プラン選択</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trial">
+        <div class="section-container">
+            <div class="trial-content">
+                <div class="trial-title">トライアルセクションタイトル</div>
+                <div class="trial-description">トライアル説明テキスト</div>
+                <button class="cta-button-primary">CTA ボタン</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="explanation">
+        <div class="section-container">
+            <div class="section-title">説明セクションタイトル</div>
+            <div class="explanation-content">
+                <div class="explanation-title">説明項目タイトル 1</div>
+                <div class="explanation-text">説明本文テキスト</div>
+            </div>
+            <div class="explanation-content">
+                <div class="explanation-title">説明項目タイトル 2</div>
+                <div class="explanation-text">説明本文テキスト</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="section-container">
+            <div class="section-title">よくある質問セクションタイトル</div>
+            <div class="faq-item">
+                <div class="faq-question">質問 1</div>
+                <div class="faq-answer">回答テキスト</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">質問 2</div>
+                <div class="faq-answer">回答テキスト</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">質問 3</div>
+                <div class="faq-answer">回答テキスト</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">質問 4</div>
+                <div class="faq-answer">回答テキスト</div>
+            </div>
+            <div class="cta-buttons" style="margin-top: 60px;">
+                <button class="cta-button-primary">CTA ボタン</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom-cta">
+        <div class="section-container">
+            <div class="bottom-cta-title">タイトル</div>
+            <div class="cta-buttons">
+                <button class="cta-button-primary">CTA ボタン</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <div class="footer-column">フッターリンク 1</div>
+            <div class="footer-column">フッターリンク 2</div>
+            <div class="footer-column">フッターリンク 3</div>
+            <div class="footer-column">フッターリンク 4</div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-text">コピーライト</div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
