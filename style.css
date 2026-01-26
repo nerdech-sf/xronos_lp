@@ -689,6 +689,16 @@ footer {
         display: none;
     }
 
+    .header-container {
+        justify-content: center;
+        position: relative;
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 0;
+    }
+
     .feature-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -724,8 +734,39 @@ footer {
     .hero-title,
     .hero-description,
     .trial-title,
-    .trial-description {
+    .trial-description,
+    .section-title,
+    .explanation-title,
+    .faq-question,
+    .bottom-cta-title,
+    .footer-bottom-text {
         width: 90%;
         max-width: 600px;
+    }
+
+    .cta-button-primary,
+    .cta-button-secondary {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .hero,
+    .features,
+    .detailed-features,
+    .flow-comparison,
+    .pricing,
+    .trial,
+    .explanation,
+    .faq,
+    .bottom-cta {
+        padding: 60px 20px;
+    }
+
+    .page-links {
+        padding: 40px 20px;
     }
 }
