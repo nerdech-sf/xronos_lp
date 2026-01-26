@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif;
     background: #fff;
@@ -21,20 +26,24 @@ header {
 
 .header-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 .logo {
     width: 200px;
+    max-width: 200px;
     height: 50px;
     background: transparent;
     border-radius: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .logo img {
@@ -137,7 +146,9 @@ nav ul li {
 
 .hero-content {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .hero-badge {
@@ -152,7 +163,7 @@ nav ul li {
     color: white;
     font-weight: bold;
     font-size: 12px;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .hero-title {
@@ -234,10 +245,12 @@ nav ul li {
 
 .page-links-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    padding: 0 20px;
 }
 
 .page-link-card {
@@ -258,7 +271,9 @@ nav ul li {
 
 .section-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .section-title {
@@ -670,11 +685,13 @@ footer {
 
 .footer-links {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     margin-bottom: 40px;
+    padding: 0 20px;
 }
 
 .footer-column {
@@ -766,10 +783,6 @@ footer {
         max-width: 250px;
     }
 
-    header {
-        padding: 20px;
-    }
-
     .hero,
     .features,
     .detailed-features,
@@ -784,5 +797,10 @@ footer {
 
     .page-links {
         padding: 40px 20px;
+    }
+    
+    .logo {
+        width: 150px;
+        max-width: 150px;
     }
 }
